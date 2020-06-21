@@ -32,7 +32,14 @@ class  App extends Component() {
         } else { 
             return (
                 <div className="App">
-                    Movies loaded!!
+                    <ul>
+                        {Movies.map(Movies => (
+                            <li key={Movies.id}>
+                                {Movies.Title} | {Movies.Year} | {Movies.Rated}
+
+                            </li>
+                        ))};
+                    </ul>
                 </div>
             )
         }

@@ -13,8 +13,8 @@ class Search extends React.Component {
         }
     }
 
-    fetchResults = (updatedPageNo,) => {
-        
+    fetchResults = (updatedPageNo,query) => {
+        const searchUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=${query}1302d05c`
     };
 
     handleOnInputChange = (event) => {
